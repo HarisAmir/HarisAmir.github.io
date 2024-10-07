@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Download PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hello, World!</h1>
-        <button id="helloButton">Click Me!</button>
+        <h1>Download Your PDF</h1>
+        <button onclick="downloadPDF()">Download PDF</button>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function downloadPDF() {
+            window.location.href = 'Close Quarters Urban Area Combat Theory By Muhammad Hammad.pdf';
+        }
+    </script>
 </body>
 </html>
